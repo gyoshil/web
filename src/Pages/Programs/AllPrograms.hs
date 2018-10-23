@@ -42,13 +42,13 @@ nov2018 = Program{
    p $ do
      "Registration for the full day is $70. Please complete the "
      a ! href "" $ "Google form"
-     "to register. Registration is capped at 15 students. You may bring payment on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
+     "to register. Registration is capped at 15 students. You may bring payment in cash or check on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
    p $ do
      "Please sign the "
      a ! href "docs/BK-1.pdf" $ "release and classroom behavior forms" 
      "for your student for this program. We will also have copies available on the first day of the program if you are not able to print these ahead of time."
    p "The program will run from 8:30 AM to 3:30 PM. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
-   myTable ([["8:30 AM", "Students dropped off"]
+   myTable ([["8:30 AM - 9:00 AM", "Students dropped off"]
             ,["9:00 AM", "Practice ELA Test"]
             ,["10:00 AM", "Intro to Testing strategies"]
             ,["10:45 AM", "Math class"]
@@ -60,6 +60,9 @@ nov2018 = Program{
             ,["3:15 PM - 3:45 PM", "End of day pickup"]] :: [[String]])
    p "Our program will be located at Brooklyn Works at 159, Brooklyn, NY."
    H.div ! A.style "width:60%; margin:0 auto;" $ preEscapedToHtml googleMapsEmbed
+   object ! A.data_ "docs/brochure.pdf" ! A.type_ "application/pdf" ! width "88%" ! height "900px" $ do
+     a ! href "docs/brochure.pdf" $ "Download a brochure"
+
 }
 
 googleMapsEmbed :: String
