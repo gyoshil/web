@@ -25,7 +25,7 @@ allPrograms = sortWith epoch
   ]
 
 nov2018 = Program{
-  name = "Gyoshil BK"
+  name = "ELA, 3rd and 4th Graders"
  ,location = "BK, NYC"
  ,dates = "Nov 2018"
  ,epoch = 1540257930
@@ -41,7 +41,7 @@ nov2018 = Program{
    h2 "Key Information"
    p $ do
      "Registration for the full day is $70. Please complete the "
-     a ! href "" $ "Google form"
+     a ! href "https://goo.gl/forms/KIMGTVqqEUrKlBH53" $ "Google form"
      "to register. Registration is capped at 15 students. You may bring payment in cash or check on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
    p $ do
      "Please sign the "
