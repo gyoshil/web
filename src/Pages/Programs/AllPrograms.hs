@@ -30,12 +30,12 @@ nov2018 = Program{
  ,epoch = 1540257930
  ,summary = do
     p "This is our inaugural program in Brooklyn. Using an interdisciplinary approach to test prep, combining in-depth Math, English, and Science courses with improvisation, meditation, and clown classes simultaneously, we seek to create a curriculum that keeps students mindful and stimulated on the subjects they are learning. In short: we’re making test prep fun!"
- ,mainPic = "images/home/IMG_0009.JPG"
+ ,mainPic = "images/home/shirts.jpg"
  ,captionedPics = [
-   ("images/programs/ggu1.jpg":: AttributeValue,"Students working on group projects in the GGU library."),
-   ("images/programs/ggu2.jpg":: AttributeValue,"Dr. Maria Hwang working with students on innovation."),
-   ("images/programs/ggu3.jpg":: AttributeValue,"Learning computer science."),
-   ("images/programs/ggu4.jpg":: AttributeValue,"Rahel Kroeker works with students in small groups")]
+   ("images/programs/feb2017/aaronClass.jpg":: AttributeValue,"Aaron Profumo works through the meaning of storytelling with students."),
+   ("images/home/students_outside":: AttributeValue,"Students participate in group activities during World Scholars SAT+ 2018."),
+   ("images/images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
+   ("images/programs/ggu1.jpg":: AttributeValue, "Group work time during World Scholars in Korea, 2016")]
  ,extraHTML = do
     h1 "" 
 }
