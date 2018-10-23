@@ -24,7 +24,7 @@ about = do
       h1 ! class_ "title text-center wow fadeInDown" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ "Meet the Team"
       p ! class_ "text-center wow fadeInDown" ! dataAttribute "wow-duration" "400ms" ! dataAttribute "wow-delay" "400ms" $ do
         H.div ! class_ "single-features" $ do
-          H.div ! class_ "col-sm-5 wow fadeInLeft" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ img ! src "images/home/ws-logo.png" ! class_ "img-responsive" ! alt ""
+          H.div ! class_ "col-sm-5 wow fadeInLeft" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ img ! src "images/ws-logo.png" ! class_ "img-responsive" ! alt ""
           H.div ! class_ "col-sm-6 col-sm-offset-1 align-left wow fadeInRight" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ do
             "Gyoshil was born out of our work on "
             a ! href "http://www.gyoshil.com" $ "World Scholars LLC"

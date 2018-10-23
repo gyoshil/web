@@ -16,6 +16,7 @@ import Pages.Programs.Util
 import Pages.Programs.Feb2018
 import Pages.Programs.SATPlus2018
 
+import Control.Monad (forM_, mapM_)
 
 allPrograms :: [Program]
 allPrograms = sortWith epoch
@@ -37,5 +38,32 @@ nov2018 = Program{
    ("images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
    ("images/programs/ggu1.jpg":: AttributeValue, "Group work time during World Scholars in Korea, 2016")]
  ,extraHTML = do
-    h1 "" 
+   h2 "Key Information"
+   p $ do
+     "Please sign the "
+     a ! href "docs/SAT2018_Forms.pdf" $ "release, consent and classroom behavior forms" 
+     "for your student for this program. We will also have copies available on the first day of the program if you are not able to print these ahead of time."
+   p "Our program will be located at Brooklyn Works at 159, Brooklyn, NY."
+   H.div ! A.style "width:60%; margin:0 auto;" $ preEscapedToHtml googleMapsEmbed
+   p "The program will run from 8:30 AM to 3:30 PM. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
+   myTable ([["8:30 AM", "Students dropped off"]
+            ,["9:00 AM", "Practice ELA Test"]
+            ,["10:00 AM", "Intro to Testing strategies"]
+            ,["10:45 AM", "Math class"]
+            ,["11:45 PM", "Lunch"]
+            ,["12:15 PM", "Clown Class"]
+            ,["1:00 PM", "English Class"]
+            ,["2:00 PM", "Second Test"]
+            ,["3:00 PM", "Discuss Results"]
+            ,["3:15 PM - 3:45 PM", "End of day pickup"]] :: [[String]])
+   p "Registration for the full day is $70. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
 }
+
+googleMapsEmbed :: String
+googleMapsEmbed = "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.461926891012!2d-73.99770604783798!3d40.66378997923577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25aef44dd2d53%3A0xd6bc6d7d381467b9!2sBrooklynWorks+at+159!5e0!3m2!1sen!2sus!4v1540261326459\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+
+
+myTable :: (ToMarkup a) => [[a]] -> Html
+myTable xs = table ! A.class_ "price-table" $ forM_ xs (tr . mapM_ (td . toHtml))
+    
+
