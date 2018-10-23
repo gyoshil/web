@@ -27,7 +27,7 @@ about = do
           H.div ! class_ "col-sm-5 wow fadeInLeft" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ img ! src "images/ws-logo.png" ! class_ "img-responsive" ! alt "" ! A.style "height: 200px"
           H.div ! class_ "col-sm-6 col-sm-offset-1 align-left wow fadeInRight" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ do
             "Gyoshil was born out of our work on "
-            a ! href "http://www.gyoshil.com" $ "World Scholars LLC"
+            a ! href "http://www.worldscholars.global" $ "World Scholars LLC"
             ", the parent project of Gyoshil. World Scholars was founded in 2016, and we have run programs in the US and Korea. Our team is an eclectic group of young professionals at the top of their field who love working together to make change through education."
 
     people

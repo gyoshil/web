@@ -38,7 +38,6 @@ nov2018 = Program{
    ("images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
    ("images/programs/ggu1.jpg":: AttributeValue, "Group work time during World Scholars in Korea, 2016")]
  ,extraHTML = do
-   h1 ""
    h2 "Key Information"
    p $ do
      "Registration for the full day is $70. Please complete the "
@@ -46,7 +45,7 @@ nov2018 = Program{
      "to register. Registration is capped at 15 students. You may bring payment on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
    p $ do
      "Please sign the "
-     a ! href "docs/SAT2018_Forms.pdf" $ "release and classroom behavior forms" 
+     a ! href "docs/BK-1.pdf" $ "release and classroom behavior forms" 
      "for your student for this program. We will also have copies available on the first day of the program if you are not able to print these ahead of time."
    p "The program will run from 8:30 AM to 3:30 PM. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
    myTable ([["8:30 AM", "Students dropped off"]
