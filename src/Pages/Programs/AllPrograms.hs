@@ -25,7 +25,7 @@ allPrograms = sortWith epoch
   ]
 
 nov2018 = Program{
-  name = "ELA, 3rd and 4th Graders"
+  name = "ELA, 4th and 5th Graders"
  ,location = "BK, NYC"
  ,dates = "Nov 2018"
  ,epoch = 1540257930
