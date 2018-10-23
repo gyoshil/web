@@ -33,8 +33,8 @@ nov2018 = Program{
  ,mainPic = "images/home/shirts.jpg"
  ,captionedPics = [
    ("images/programs/feb2017/aaronClass.jpg":: AttributeValue,"Aaron Profumo works through the meaning of storytelling with students."),
-   ("images/home/students_outside":: AttributeValue,"Students participate in group activities during World Scholars SAT+ 2018."),
-   ("images/images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
+   ("images/home/students_outside.jpg":: AttributeValue,"Students participate in group activities during World Scholars SAT+ 2018."),
+   ("images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
    ("images/programs/ggu1.jpg":: AttributeValue, "Group work time during World Scholars in Korea, 2016")]
  ,extraHTML = do
     h1 "" 
