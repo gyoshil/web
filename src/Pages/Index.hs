@@ -19,7 +19,7 @@ index = do
 	H.div ! class_ "container" $ H.div ! class_ "row" $ H.div ! class_ "main-slider" $ do
 	    H.div ! class_ "slide-text" $ do
 		h1 "Bringing the world to you"
-		p "Gyoshil (Korean: 교실, classroom) is a collective of young professionals with a common goal of bringing a diversity of thought to Western pedagogy. With experience in various roles in both Western and Eastern educational institutions, Gyoshil is an initiative specifically focused on bringing parts of Eastern pedagogy to the Western classroom. For better or worse, standardized tests are an increasingly critical part of academic evaluation in the US. We take lessons learned from Korea on how students can learn to handle these challenges both academically and emotionally."
+		p "From the Korean 교실, translated to “classroom,” Gyoshil is a program dedicated to easing the stress and anxiety around standardized testing for kids of all ages. Using an interdisciplinary approach to test prep, combining in depth math, english, and science courses with improvisation, meditation, and clown classes simultaneously, we seek to create a curriculum that keeps students mindful and stimulated the subjects they are learning. In short: we’re making test prep fun!"
 		a ! href "mailto:fiona@worldscholars.global" ! class_ "btn btn-common" $ "CONTACT US"
 	    img ! src "images/home/slider/hill.png" ! class_ "slider-hill" ! alt "slider image"
 	    img ! src "images/home/slider/house.png" ! class_ "slider-house" ! alt "slider image"
@@ -44,8 +44,8 @@ index = do
     
     -- /#action
     section ! A.id "features" $ H.div ! class_ "container" $ H.div ! class_ "row" $ do
-	textRightImg "images/home/IMG_1211.JPG" "Tackling test anxiety early" "From a young age, the Korean tradition of ___ exposes students to low-stakes performance opportnuities. In a culture that has revolved around high-stakes testing for generations, ___ gives students an outlet to practice getting on stage and expressing themselves comfortably. The experiences gained from ___ help students feel more comfortable during the high-stakes testing environments that they will inevitably face."
-	textLeftImg "images/home/IMG_1211.JPG" "Passion for Humanities and Sciences" "From Acting to Computer Science, the world scholars bring a range of experience to campus that enlivens the atmosphere, and asks students to push beyond their comfort zone."
-	textRightImg "images/home/IMG_1376.JPG" "Experienced and Enthusiastic" "The world scholars come from both academia and industry, giving students a look into what sort of careers are possible when you dream big."
+	textRightImg "images/home/IMG_1211.JPG" "Tackling test anxiety early" "We are a group of passionate, young professionals, who in addition to our professional careers have created this collective in our free time. We are all educators at heart and want to make a difference in our communities through education. We remember how daunting the slew of testing was when we were kids, and Gyoshil is our way to give back and make the experience better for others."
+	textLeftImg "images/home/IMG_1211.JPG" "Passion for Humanities and Sciences" "Among our team we have graduated from Yale, Columbia, and Harvard, with masters degrees and PhDs in disciplines ranging from Computer Science and Medicine, to Acting and Theology. We are from Korea, Germany, Brooklyn, and Massachusetts. We work at Amazon, Microsoft, on Broadway, and in coffee shops. "
+	textRightImg "images/home/IMG_1376.JPG" "Experienced and Enthusiastic" "Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
 
     -- /#features
