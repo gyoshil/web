@@ -38,13 +38,16 @@ nov2018 = Program{
    ("images/home/class.jpg":: AttributeValue,"Learning about the basics of computer science in World Scholars SAT+ 2017."),
    ("images/programs/ggu1.jpg":: AttributeValue, "Group work time during World Scholars in Korea, 2016")]
  ,extraHTML = do
+   h1 ""
    h2 "Key Information"
    p $ do
+     "Registration for the full day is $70. Please complete the "
+     a ! href "" $ "Google form"
+     "to register. Registration is capped at 15 students. You may bring payment on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
+   p $ do
      "Please sign the "
-     a ! href "docs/SAT2018_Forms.pdf" $ "release, consent and classroom behavior forms" 
+     a ! href "docs/SAT2018_Forms.pdf" $ "release and classroom behavior forms" 
      "for your student for this program. We will also have copies available on the first day of the program if you are not able to print these ahead of time."
-   p "Our program will be located at Brooklyn Works at 159, Brooklyn, NY."
-   H.div ! A.style "width:60%; margin:0 auto;" $ preEscapedToHtml googleMapsEmbed
    p "The program will run from 8:30 AM to 3:30 PM. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
    myTable ([["8:30 AM", "Students dropped off"]
             ,["9:00 AM", "Practice ELA Test"]
@@ -56,7 +59,8 @@ nov2018 = Program{
             ,["2:00 PM", "Second Test"]
             ,["3:00 PM", "Discuss Results"]
             ,["3:15 PM - 3:45 PM", "End of day pickup"]] :: [[String]])
-   p "Registration for the full day is $70. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
+   p "Our program will be located at Brooklyn Works at 159, Brooklyn, NY."
+   H.div ! A.style "width:60%; margin:0 auto;" $ preEscapedToHtml googleMapsEmbed
 }
 
 googleMapsEmbed :: String
