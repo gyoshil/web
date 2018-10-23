@@ -34,7 +34,6 @@ everyone = --sortWith name $
   ,santolucito
   ,rahul
   ,jacob
-  ,dao
   ,murphy
   ]
 
