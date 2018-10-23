@@ -17,14 +17,6 @@ import Pages.People.Everyone
 people :: Html
 people = do
 
-    -- /#company-information
-    section ! A.id "team" $ H.div ! class_ "container" $ H.div ! class_ "row" $ do
-      h1 ! class_ "title text-center wow fadeInDown" ! dataAttribute "wow-duration" "500ms" ! dataAttribute "wow-delay" "300ms" $ "Meet the Team"
-      p ! class_ "text-center wow fadeInDown" ! dataAttribute "wow-duration" "400ms" ! dataAttribute "wow-delay" "400ms" $ do
-          "Our team is an eclectic group of young professionals at the top of their field."
-          br
-          "This team has been working together on similar projects since 2013."
-
     -- /#people profiles
     section ! A.id "profiles" $ H.div ! class_ "container" $ H.div ! class_ "row" $ do
       H.div ! A.id "team-carousel" ! class_ "carousel slide wow fadeIn" ! dataAttribute "ride" "carousel" ! dataAttribute "wow-duration" "400ms" ! dataAttribute "wow-delay" "400ms" $ do

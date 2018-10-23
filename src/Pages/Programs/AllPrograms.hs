@@ -20,20 +20,16 @@ import Pages.Programs.SATPlus2018
 allPrograms :: [Program]
 allPrograms = sortWith epoch
   [
-   may2016
-  ,feb2017
-  ,aug2017
-  ,feb2018
-  ,sat2018
+   nov2018
   ]
 
-may2016 = Program{
-  name = "World Scholars in Korea"
- ,location = "Nonsan, South Korea"
- ,dates = "May 2016"
- ,epoch = 1462111307
+nov2018 = Program{
+  name = "Gyoshil BK"
+ ,location = "BK, NYC"
+ ,dates = "Nov 2018"
+ ,epoch = 1540257930
  ,summary = do
-    p "This week long series hosted at Guemgang University brought 9 World Scholars to campus for lectures and one-on-one sessions. Each World Scholar presented a lecture/workshop on the particular field of interest. Each lecture included Korean language translation support so that every student benefited from the experience, no matter their prior experience."
+    p "This is our inaugural program in Brooklyn. Using an interdisciplinary approach to test prep, combining in-depth Math, English, and Science courses with improvisation, meditation, and clown classes simultaneously, we seek to create a curriculum that keeps students mindful and stimulated on the subjects they are learning. In short: we’re making test prep fun!"
  ,mainPic = "images/home/IMG_0009.JPG"
  ,captionedPics = [
    ("images/programs/ggu1.jpg":: AttributeValue,"Students working on group projects in the GGU library."),
@@ -43,37 +39,3 @@ may2016 = Program{
  ,extraHTML = do
     h1 "" 
 }
-
-feb2017 = Program{
-  name = "Young Undergraduates Overseas Immersion Program"
- ,location = "New Haven, CT"
- ,dates = "Feb 2017"
- ,epoch = 1485957707
- ,summary = do
-    p "There were 300 applicants for 15 spots for this 10 day program. The overall aim of the program is to create a greater awareness in the minds of the delegation to understand the philosophy and the practice of education outside China, and to learn new skills in the area of liberal arts, which are not emphasized in their current degree program."
- ,mainPic = "images/home/dinner.jpg"
- ,captionedPics = [
-   ("images/programs/feb2017/aaronClass.jpg":: AttributeValue,"Aaron Profumo works with students on understanding theater."),
-   ("images/programs/feb2017/natHist.jpg":: AttributeValue,"Students take guided tour of the Peabody Natural History Museum."),
-   ("images/programs/feb2017/jacobClass.jpg":: AttributeValue,"Jacob Li gives a lecture on philosophy."),
-   ("images/programs/feb2017/musicClass.jpg":: AttributeValue,"A music lecture gives students a first hand look into the piece they will hear later that night.")]
- ,extraHTML = h1 ""
-}
-
-aug2017 = Program{
-  name = "SAT+ 2017"
- ,location = "Woodbridge, CT"
- ,dates = "Aug 2017"
- ,epoch = 1501596107
- ,summary = do
-    p "This month long program combined SAT prep with passion projects. Designed for student grades 7-12, the program helped students not only prepare for college entrance exams, but also for long-term success after they arrive at college." 
- ,mainPic = "images/home/class.jpg"
- ,captionedPics = []
- ,extraHTML = do
-   p "What is a Passion Project? In America and around the globe, educators are moving away from test-centric summative evaluations for learning. The educational landscape is moving towards a formative assessment in which students are expressing their learning in a more comprehensive way through projects. Project-based learning is the inspiration behind Passion Projects. We value the multi-dimensional ways of expressing learning through topics that students care about and we want to make sure that we provide an opportunity for students to make that happen. The Passion Projects will allow students to collaborate, innovate, and design a project (whether it be an idea or a product) of their choosing and we will facilitate to see through the project's completion."
-   p "By participating in the SAT+ World Scholars program, students developed the skills to present themselves, not just as strong students, but as future leaders. The final passion project gives students the first push to take charge of their own education and find passion in their work. Not all students will continue to work on their passion project after the program, but all students will use those skills to find the next passion project to work on."
-   br
-   p "To participate in the next SAT+ program and start your own passion project, email us at "
-   a ! href "mailto:fiona@worldscholars.global" $ "fiona@worldscholars.global"
-}
-

@@ -28,20 +28,14 @@ everyone :: [Person]
 everyone = --sortWith name $ 
  map addHeadshot
   [
-   maria
-  ,jacob
+   aaron
+  ,maria
   ,fiona
   ,santolucito
-  ,aaron
   ,rahul
-  ,klumpp
-  ,rahel
+  ,jacob
   ,dao
   ,murphy
---  ,diana
-  ,stefan
---  ,sangwoo
---  ,felix
   ]
 
 sortWith :: Ord b => (a -> b) -> [a] -> [a]
@@ -62,9 +56,9 @@ data Person = Person {
 
 fiona = Person{
   headshotLink = "",
-  name = "Fiona Santolucito (VP of Operations)",
+  name = "Fiona Santolucito",
   title = "Organizing Opportunities",
-  bio = "Fiona Santolucito is a graduate of Johns Hopkins University as a Hodson Trust Scholar and is entering Yale University as a graduate student this fall. She is fluent in Mandarin Chinese (HSK-5) and has studied at Beijing #80 High School. She has also studied at Yonsei University, South Korea, where she worked with The Associated Press to promote children's health issues in North Korea. Fiona worked with Tuscany Strategy, an education and health care consulting firm, for two years where she built models for business opportunities. Fiona acts as the Director of Operations at World Scholars."
+  bio = "Fiona Santolucito is studying at Yale University as a graduate student and is a graduate of Johns Hopkins University as a Hodson Trust Scholar. She is fluent in Mandarin Chinese (HSK-5) and has studied at Beijing #80 High School. She has also studied at Yonsei University, South Korea, where she worked with The Associated Press to promote children's health issues in North Korea. Fiona worked with Tuscany Strategy, an education and health care consulting firm, for two years where she built models for business opportunities. Fiona acts as the Director of Operations at World Scholars."
 }
 
 klumpp = Person{
@@ -83,7 +77,7 @@ rahul = Person{
 
 aaron = Person{
   headshotLink = "",
-  name = "Aaron Profumo",
+  name = "Aaron Profumo (Program Director)",
   title = "Presenting your Best Self",
   bio = do
           p "Aaron is an actor, producer, teacher, comic, improviser, and recent graduate of the Yale School of Drama where he received his MFA. As a teacher Aaron draws from a variety of disciplines ranging from Stanislavski, Grotowski, Linklater, Alexander, Fitzmaurice, Bogart, Le Coque, and others, forming a methodology that explores the mind/body divide in acting and creating fully expressive performers and artists that use their whole instrument with ease and free creative impulse. Aaron is a co-founder of RTCstudios, a multimedia arts company seeking to produce, fund, and fully incubate young and mid level budding artists from a range of mediums."
@@ -106,37 +100,23 @@ dao = Person{
           a ! href "http://www.daochantes.com" $ "www.daochantes.com"
 }
 
-diana = Person{
-  headshotLink = "",
-  name = "Diana LeDang",
-  title = "Medicine for the Masses",
-  bio = "Originally from Los Angeles, California, Diana made her way to the east coast and is a recent graduate of Yale University (MS '16). Prior to graduation, she engaged in a round of interviews after being recruited by UCLA Medicine, Mount Sinai Hospital, New York Presbyterian Hospital, and Yale New Haven Hospital, to join their intensive care team. She previously worked at University of Massachusetts Memorial Medical Health System and UMass-Worcester School of Medicine as an Advance Practice Provider and Surgical Intensivist. She is currently working at the Yale-New Haven hospital. Before matriculating into Yale University, she studied at the University of California acquiring a degree in Environmental Science (MPH '12) and in Biomedical Engineering (BS '09). She plans to return for her doctorate specializing in Anesthesia in 2019 at UPenn and hopes to serve as a tenured faculty member and precepting clinician in Anesthesiology."
-}
-
 santolucito = Person{
   headshotLink = "",
-  name = "Mark Santolucito (VP of Technology)",
+  name = "Mark Santolucito",
   title = "Computer Science Without Computers",
   bio = do 
-          p "Mark Santolucito is a Computer Science PhD student at Yale University, where he is studying programming languages with Ruzica Piskac. Mark started at Yale with Paul Hudak, working on interactive computer music and Functional Reactive Programming (FRP). Mark is now working with Ruzica Piskac on various forms of program synthesis. Recently, their work has focused on synthesis of FRP programs from logical specifications. Mark also graduated Cum Laude from Amherst College with a BA in both Computer Science and Music, where he was awarded the Best Computer Science Thesis Award in addition to the Lerner Piano Prize upon graduation. In the summer of 2018, Mark will work at Amazon applying his research in practice." 
+          p "Mark Santolucito is a Computer Science PhD student at Yale University, where he is studying programming languages with Ruzica Piskac. Mark started at Yale with Paul Hudak, working on interactive computer music and Functional Reactive Programming (FRP). Mark is now working with Ruzica Piskac on various forms of program synthesis. Mark also graduated Cum Laude from Amherst College with a BA in both Computer Science and Music, where he was awarded the Best Computer Science Thesis Award in addition to the Lerner Piano Prize upon graduation. In the summer of 2018, Mark interned at Amazon in NYC, applying his research in practice." 
           a ! href "http://www.marksantolucito.com" $ "www.marksantolucito.com."
 }
 
 maria = Person{
   headshotLink = "",
-  name = "Maria Hwang (President)",
+  name = "Maria Hwang",
   title = "Education Across Cultures",
   bio = do
-          p "Maria Hwang is a post-doctoral researcher at the Columbia University Medical Center's (CUMC) Biomedical Informatics Department working with Lena Mamykina. Maria received her doctorate of education at Teachers College, Columbia University in Instructional Technology and Media under the supervision of Charles Kinzer, focusing on persuasive messages for behavior change in a digital game environment. For her dissertation she developed a game, Monster Appetite, and embedded persuasive messages to see if people would be receptive to those tailored messages that emphasized consequences of a positive or negative behavior. She continues her research on persuasive messages at her post-doc at CUMC with diabetic patients. In the Fall of 2018, Maria will begin a new position as a tenure-track Assistant Professor of Computer Science at the Fashion Institute of Technology (FIT) in NYC, NY."
+          p "Maria Hwang is a tenure-track Assistant Professor of Computer Science at the Fashion Institute of Technology (FIT) in NYC, NY. Previously, she worked as post-doctoral researcher at the Columbia University Medical Center's (CUMC) Biomedical Informatics Department working with Lena Mamykina. Maria received her doctorate of education at Teachers College, Columbia University in Instructional Technology and Media under the supervision of Charles Kinzer, focusing on persuasive messages for behavior change in a digital game environment. For her dissertation she developed a game, Monster Appetite, and embedded persuasive messages to see if people would be receptive to those tailored messages that emphasized consequences of a positive or negative behavior."
           a ! href "http://www.mariahwang.com" $ "www.mariahwang.com."
 }
-
-stefan = Person{
-  headshotLink = "",
-  name = "Stefan Brunner",
-  title = "Intercultural Exchange",
-  bio = " Stefan Brunner is a project manager at the Mercator Foundation Switzerland, where he is leading a three-year pilot-project, that creates support structures at Swiss universities for student initiatives and projects. He is further responsible for the foundation's support to youth in the areas of volunteering and active in its role in international youth exchange and international cooperation. He holds a Masters degree in International Affairs from the Graduate Institute of International and Development Studies in Geneva and has been a visiting fellow at the McMillan Center for International and Area Studies at Yale University. Among his working experiences are engagements with the United Nations on the classification of internationally responding urban search and rescue teams and with EAPPI as a human rights observer in the occupied Palestinian territories. He is the author of the Impact Compendium on Youth Exchange - An overview of scientific research results on the impact of intercultural exchanges, which has been published in German, English, and French"
-  }
 
 murphy = Person{
   headshotLink = "",
@@ -147,22 +127,7 @@ murphy = Person{
 
 jacob = Person{
   headshotLink = "",
-  name = "Jacob Li (VP of Buisness Development)",
+  name = "Jacob Li",
   title = "The Methodology of Philosophy",
   bio = "Prior to joining World Scholars, Jacob was a venture creation intern at Yale Tsai Center for Innovative Thinking (formerly, \"Yale Entrepreneurial Institute\"), and organized one of the nation's first blockchain executive education partnering with Harvard and Yale law and management faculty members in early 2016. He also served as an instructional technologist at Yale College, a core member of Yale Law School Non-profit Organization Clinic, and a technical assistant for Professor Akhil Amar in 2014. Jacob Li is a 2012 John Templeton Fellowship recipient and a Yale graduate. "
 }
-
-sangwoo = Person{
-  headshotLink = "",
-  name = "Lee Sangwoo",
-  title = "Education and Adversity",
-  bio = "Sangwoo Lee is from Seoul, South Korea. He is a recent graduate of Harvard University, with a Masters of Education (Ed.M) in International Education Policy. He went to Grinnell College in Iowa where he studied economics. Before going to Grinnell College, he took the Korean G.E.D (General Education Development) test instead of attending a high school. He has a very interesting life story behind this. He will share how he could get into Harvard University, which is one of the best universities in the world, as a Korean who received the G.E.D diploma. On top of that, he will share how his life at Harvard looked like and what kinds of experiences he had as a student at Harvard. He believes education is one of the strongest driving forces for countries to develop both socially and economically; therefore, he is currently interested in policy implementations regarding both education and public health in developing countries."
-}
-
-klein = Person{
-  headshotLink = "",
-  name = "Felix Klein",
-  title = "Computer Science",
-  bio = "My research interests lie in the areas of synthesis and infinite games. In particular, I am interested in improving the synthesis process by finding suitable criteria that efficiently bound the solution space. Furthermore, I study the creation of easy to verify certificates for the synthesized solutions and corresponding game models to support these techniques."
-} 
-
