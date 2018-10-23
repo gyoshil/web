@@ -30,7 +30,7 @@ nov2018 = Program{
  ,dates = "Nov 2018"
  ,epoch = 1540257930
  ,summary = do
-    p "This is our inaugural program in Brooklyn. Using an interdisciplinary approach to test prep, combining in-depth Math, English, and Science courses with improvisation, meditation, and clown classes simultaneously, we seek to create a curriculum that keeps students mindful and stimulated on the subjects they are learning. In short: we’re making test prep fun!"
+    p "This is our inaugural program in Brooklyn that we will run on both Nov. 6th and Nov. 12th. Using an interdisciplinary approach to test prep, combining in-depth Math, English, and Science courses with improvisation, meditation, and clown classes simultaneously, we seek to create a curriculum that keeps students mindful and stimulated on the subjects they are learning. In short: we’re making test prep fun!"
  ,mainPic = "images/home/shirts.jpg"
  ,captionedPics = [
    ("images/programs/feb2017/aaronClass.jpg":: AttributeValue,"Aaron Profumo works through the meaning of storytelling with students."),
@@ -40,14 +40,14 @@ nov2018 = Program{
  ,extraHTML = do
    h2 "Key Information"
    p $ do
-     "Registration for the full day is $70. Please complete the "
+     "Registration for one day is $70 - registration for both days is $120. Please complete the "
      a ! href "https://goo.gl/forms/KIMGTVqqEUrKlBH53" $ "Google form"
      "to register. Registration is capped at 15 students. You may bring payment in cash or check on the morning of the program. Gyoshil dedicates 10% of our classroom to scholarship students. Please let us know when you apply if you have any financial constraints and we promise you we will try to meet them. We offer free lunch to scholarship students as well."
    p $ do
      "Please sign the "
      a ! href "docs/BK-1.pdf" $ "release and classroom behavior forms" 
      "for your student for this program. We will also have copies available on the first day of the program if you are not able to print these ahead of time."
-   p "The program will run from 8:30 AM to 3:30 PM. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
+   p "The program will run from 8:30 AM to 3:30 PM on both Nov 6th and Nov 12th. Below is an outline of the schedule. The schedule is still subject to slight changes, depending on the classroom atmosphere."
    myTable ([["8:30 AM - 9:00 AM", "Students dropped off"]
             ,["9:00 AM", "Practice ELA Test"]
             ,["10:00 AM", "Intro to Testing strategies"]
